@@ -9,5 +9,8 @@ const skillsCtrl = require("../controllers/skills");
 // });
 
 router.get("/", skillsCtrl.index);
+router.get("/new", skillsCtrl.new);
+
+router.post("/", skillsCtrl.addSkill);
 
 module.exports = router;
